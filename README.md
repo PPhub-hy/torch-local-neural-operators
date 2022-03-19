@@ -19,7 +19,7 @@ Actually, the total training set contains the velocity fields of 1000s.
 
 For reproducing the reported results, please download the provided data from  
 
-Unzip the data files at /Train_Validation/Data/*
+Unzip the data files at ```/Train_Validation/Data/*```
 
 ## Training and Validatiing
 
