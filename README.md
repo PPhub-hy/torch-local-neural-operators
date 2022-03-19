@@ -27,9 +27,9 @@ The python script main.py does both the network training and validating.
 Please change the function inside the script
 
 Train and validate a new network named 'newLNO'
-'''
+```
 python main.py -n newLNO
-'''
+```
 
 Validated the trained network provided in models/
 '''
@@ -39,14 +39,16 @@ python main.py -n NS_200ep_LNO-legendre2_n16m8k2
 ## Applications
 
 Apply the trained LNO-Legendre to solve the 2-D flow around a square
-'''
+
+```
 python mainSquareCylinder.py
-'''
+```
 
 Apply the trained LNO-Legendre to solve the 2-D flow across a cascade airfoil
-'''
+
+```
 python mainCascade.py
-'''
+```
 
 ## GIF Demos
 
