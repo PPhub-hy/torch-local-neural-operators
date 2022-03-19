@@ -8,7 +8,7 @@ We just consider the networks and applications provided here as examples.
 And we believe that, with the local learning framework, more sophisticated architectures or interesting applications could come out soon for learning various partial differential equations.
 In Chinese, we consider all the demos here for '抛砖引玉', which means we are showing some crude bricks out for inspiring much more brilliant ideas (the gems) from anyother.
 
-## The Environment
+## Environment
 
 Pytorch 1.6.0
 
