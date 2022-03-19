@@ -17,7 +17,11 @@ Pytorch 1.6.0
 We provide full testing data for learning the Navier-Stokes equations (mu = 0.002), and a single sample for training (including the velocity fields of 8s).
 Actually, the total training set contains the velocity fields of 1000s for each problem.
 
-For reproducing the reported results, please download the provided data from https://pan.baidu.com/s/1-XdFSOX4MTY1baRWpgSKHw with code lb27  
+For reproducing the reported results, please download the provided data from
+
+url: https://pan.baidu.com/s/1-XdFSOX4MTY1baRWpgSKHw 
+
+code: lb27 
 
 Unzip the data files at ```/Train_Validation/Data/*```
 
