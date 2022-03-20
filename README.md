@@ -57,3 +57,10 @@ python mainCascade.py
 ## GIF Demos
 
 In preparation....
+
+## Paper and citation 
+
+This paper is now published as a preprint on arXiv.org.
+Full text can be downloaded at https://doi.org/10.48550/arXiv.2203.08145.
+
+Please cite this paper if any part of the codes here are used in your research. Great Thanks to you!
