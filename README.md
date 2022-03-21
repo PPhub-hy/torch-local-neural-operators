@@ -56,7 +56,9 @@ python mainCascade.py
 
 ## GIF Demos
 
-In preparation....
+Navier-Stokes equation (mu=0.002):
+ ![image]( demos/Re500Case3_u_L.gif)
+
 
 ## Paper and citation 
 
