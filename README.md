@@ -56,9 +56,19 @@ python mainCascade.py
 
 ## GIF Demos
 
-Navier-Stokes equation (mu=0.002):
- ![image]( demos/Re500Case3_u_L.gif)
+Validation: flow in 2-D square domain with periodical boundaries (mu=0.002)
 
+ ![image]( demos/Re500Case3_u_L.gif)
+ 
+ ![image]( demos/Re500Case3_v_L.gif)
+ 
+Application 1: 2-D flow around a square
+
+ ![image]( demos/SquareCylinder_L.gif)
+
+Application 2: 2-D flow across a cascade airfoil
+
+ ![image]( demos/Airfoil_L.gif)
 
 ## Paper and citation 
 
