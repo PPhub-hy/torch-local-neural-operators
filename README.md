@@ -18,9 +18,8 @@ We provide full testing data for learning the Navier-Stokes equations (mu = 0.00
 
 To reproduce the reported results, please download the provided data from
 
-URL: https://pan.baidu.com/s/1-XdFSOX4MTY1baRWpgSKHw 
-
-code: lb27 
+URL: https://pan.baidu.com/s/1XW8RiQXkWnmrxrqTGCplaA 
+code: je86 
 
 Unzip the data files at ```/Train_Validation/Data/*```
 
