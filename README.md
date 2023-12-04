@@ -1,7 +1,7 @@
 # Implementation of  the local neural operator
 
 This page releases codes and data of an academic paper, 'Local neural operator for solving transient partial differential equations on varied domains'.
-With the provided codes, one can quickly reproduce the training and validation of the two reported local neural operators (LNO-Legendre or LNO-Chebyshev).
+With the provided codes, one can quickly reproduce the training and validation of local neural operator.
 Also, two demos for applying the well-trained LNOs to respectively solve the 2-D flows around a square and the NACA0012 airfoils are provided.
 
 We just consider the networks and applications provided here as examples.
@@ -10,12 +10,11 @@ In Chinese, we consider all the demos here for '抛砖引玉', which means we ar
 
 ## Environment
 
-Pytorch 1.6.0
+Pytorch 1.7.1
 
 ## Data
 
 We provide full testing data for learning the Navier-Stokes equations (mu = 0.002), and a single sample for training (including the velocity fields of 8s).
-Actually, the total training set contains the velocity fields of 1000s for each problem.
 
 To reproduce the reported results, please download the provided data from
 
@@ -25,7 +24,7 @@ code: lb27
 
 Unzip the data files at ```/Train_Validation/Data/*```
 
-## Training and Validatiing
+## Training and Validation
 
 The Python script main.py does both the network training and validation.
 Please change the function inside the script
@@ -42,13 +41,13 @@ python main.py -n NS_200ep_LNO-legendre2_n16m8k2
 
 ## Applications
 
-Apply the trained LNO-Legendre to solve the 2-D flow around a square
+Apply the trained LNO to solve the 2-D flow around a square
 
 ```
 python mainSquareCylinder.py
 ```
 
-Apply the trained LNO-Legendre to solve the 2-D flow across a cascade airfoil
+Apply the trained LNO to solve the 2-D flow across a cascade airfoil
 
 ```
 python mainCascade.py
