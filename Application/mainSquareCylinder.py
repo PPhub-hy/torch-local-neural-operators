@@ -5,7 +5,7 @@ import gc
 import torch.nn.functional as F
 
 with torch.no_grad():
-    model_file = 'No3-0102_model.pp'
+    model_file = 'NS_Re100_model.pp'
     network = torch.load('models/' + model_file)
     network.eval()
 

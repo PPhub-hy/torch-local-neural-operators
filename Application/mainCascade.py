@@ -13,7 +13,7 @@ with torch.no_grad():
 
     alpha = -10 / 180 * np.pi  # Angle of attack
 
-    model_file = 'No3-0102_model.pp'
+    model_file = 'NS_Re100_model.pp'
     network = torch.load('models/' + model_file)
     network.eval()
 
