@@ -89,56 +89,6 @@ def generate_wavelet_filters_2D(wl, level, modes_a, modes_b):
 
     return filter_d, filter_r, l
 
-def H1Loss(output, label, NG):
-    assert output.shape == label.shape
-    u_output = output[:, 0:1, :, :]
-    v_output = output[:, 1:2, :, :]
-    u_label = label[:, 0:1, :, :]
-    v_label = label[:, 1:2, :, :]
-
-    dux_output = F.pad(u_output, (0, 2, 0, 0), "circular")-F.pad(u_output, (1, 1, 0, 0), "circular")
-    dux_output = dux_output[:, :, :, :-2] * NG / 2
-    duy_output = F.pad(u_output, (0, 0, 0, 2), "circular") - F.pad(u_output, (0, 0, 1, 1), "circular")
-    duy_output = duy_output[:, :, :-2, :] * NG / 2
-
-    dvx_output = F.pad(v_output, (0, 2, 0, 0), "circular") - F.pad(v_output, (1, 1, 0, 0), "circular")
-    dvx_output = dvx_output[:, :, :, :-2] * NG / 2
-    dvy_output = F.pad(v_output, (0, 0, 0, 2), "circular") - F.pad(v_output, (0, 0, 1, 1), "circular")
-    dvy_output = dvy_output[:, :, :-2, :] * NG / 2
-
-    dux_label = F.pad(u_label, (0, 2, 0, 0), "circular") - F.pad(u_label, (1, 1, 0, 0), "circular")
-    dux_label = dux_label[:, :, :, :-2] * NG / 2
-    duy_label = F.pad(u_label, (0, 0, 0, 2), "circular") - F.pad(u_label, (0, 0, 1, 1), "circular")
-    duy_label = duy_label[:, :, :-2, :] * NG / 2
-
-    dvx_label = F.pad(v_label, (0, 2, 0, 0), "circular") - F.pad(v_label, (1, 1, 0, 0), "circular")
-    dvx_label = dvx_label[:, :, :, :-2] * NG / 2
-    dvy_label = F.pad(v_label, (0, 0, 0, 2), "circular") - F.pad(v_label, (0, 0, 1, 1), "circular")
-    dvy_label = dvy_label[:, :, :-2, :] * NG / 2
-
-    #print(dux_output)
-    #print(dux_label)
-
-    H1 = (u_output-u_label)**2 +(v_output-v_label)**2
-    H1 = H1 + (dux_output - dux_label)**2 + (dvx_output - dvx_label)**2 + (duy_output - duy_label)**2 + (dvy_output - dvy_label)**2
-    H1 = torch.sum(torch.sum(H1, -1), -1) / NG / NG
-    H1 = torch.sqrt(H1)
-    #print(H1.shape)
-    return torch.mean(H1)
-
-def L2Loss(output, label, NG):
-    assert output.shape == label.shape
-    u_output = output[:, 0:1, :, :]
-    v_output = output[:, 1:2, :, :]
-    u_label = label[:, 0:1, :, :]
-    v_label = label[:, 1:2, :, :]
-
-    L2 = (u_output-u_label)**2 +(v_output-v_label)**2
-    #print(L2)
-    L2 = torch.sum(torch.sum(L2, -1), -1) / NG / NG
-    #print(L2)
-    L2 = torch.sqrt(L2)
-    return torch.mean(L2)
 
 
 if __name__ == '__main__':
