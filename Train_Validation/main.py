@@ -64,9 +64,9 @@ def get_parameter_number(network):
 
 def train_test_save():
     if PROBLEM == 'NS':
-        #orders_all = [i for i in range(1, 12)] #Re500-mini
+        orders_all = [i for i in range(1, 12)] #Re500-mini
         #orders_all = [i for i in range(1, 111)] #Re1000
-        orders_all = [i for i in range(1, 136)] #Re500
+        #orders_all = [i for i in range(1, 136)] #Re500
         #orders_all = [i for i in range(1, 211)] #Re100
         #orders_all = [i for i in range(1, 511)] #Re50
 
