@@ -15,8 +15,8 @@ class NetNS_InN_legendre(nn.Module):
         self.filter_d = None
         self.filter_r = None
 
-        self.n = 12
-        self.m = 6
+        self.n = 16
+        self.m = 8
         self.k = 2
         print('legendre params: n:{} m:{} k:{}'.format(self.n,self.m,self.k))
         if cheb:

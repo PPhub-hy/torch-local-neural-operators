@@ -115,6 +115,7 @@ def test_iterative_Wave_InN(network, dataset, test_gen, round, long_round, out_n
             new_in[:, home:home + 2, :, :] = output
             inp = new_in
     scio.savemat('outputs/'+out_name, mdict={"output": data_matlab.detach().numpy()})
+
 def test_iterative_Burgers1D_InN(network, dataset, test_gen, round, long_round, out_name, In_length):
     N = 128
     length_in = In_length
