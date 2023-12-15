@@ -10,7 +10,7 @@ In Chinese, we consider all the demos here for '抛砖引玉', which means we ar
 
 ## Environment
 
-Pytorch 1.7.1
+Pytorch 1.6.0
 
 ## Data
 
