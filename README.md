@@ -4,10 +4,6 @@ This page releases codes and data of an academic paper, 'Local neural operator f
 With the provided codes, one can quickly reproduce the training and validation of local neural operator.
 Also, two demos for applying the well-trained LNOs to respectively solve the 2-D flows around a square and the NACA0012 airfoils are provided.
 
-We just consider the networks and applications provided here as examples.
-And we believe that, with the local learning framework, more sophisticated architectures or interesting applications could come out soon for learning various partial differential equations.
-In Chinese, we consider all the demos here for '抛砖引玉', which means we are showing some crude bricks out for inspiring much more brilliant ideas (the gems) from any other.
-
 ## Environment
 
 Pytorch 1.6.0
